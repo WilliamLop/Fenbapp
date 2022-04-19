@@ -1,0 +1,211 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    background-image: linear-gradient(115deg,
+    rgba(55, 2, 48, 0),
+    rgba(0, 0, 0, 0.799)),
+    url(img/modern-futuristic-sci-fi-background.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h2{
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+
+.border{
+    color: #118ab2;
+    text-shadow: 
+    -1px -1px 0 #060606,
+    1px -1px 0 #acacac,
+    1PX 1PX 0 #adadad,
+    -1px 1px 0 #000c03;
+}
+.wave{
+    color: #f4efe0;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100%{
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 68%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            24% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+
+.display-topleft{
+    position: relative;
+    top: -40px;
+}
+.padding-large{
+    padding: 12px 24px ;
+}
+.display-middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.jumbo{
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: rgba(240, 240, 240, 0.895);
+    
+}
+.descripcion{
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    font-style: italic;
+    background-image: linear-gradient(62deg, #0A1010 20%, #970550 100%);
+    box-shadow: 0 0 5px 0 #e1e1e1;
+}
+.animate-top{
+    position: relative;
+    animation: animatop 0.4s;
+}
+em{
+    text-align: center;
+}
+.border-grey{
+    border-color: #ffffff;
+}
+
+/*Boton css de uiverse**/
+/* From uiverse.io by @gagan-gv */
+
+a, a:visited, a:link{
+    text-decoration: none;
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.button {
+    position: relative;
+    padding: 15px 30px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+}   
+.button span {
+    position: relative;
+    color: #e9e9e9;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 8px;
+    z-index: 1;
+}   
+.button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #970550;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+.button .liquid::after,
+.button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+}
+.button .liquid::before {
+    border-radius: 45%;
+    background: rgb(23, 23, 23);
+    animation: animate 5s linear infinite;
+}
+.button .liquid::after {
+    border-radius: 40%;
+    background: rgba(15, 15, 15, 0.5);
+    animation: animate 10s linear infinite;
+}
+.button:hover .liquid {
+    top: -120px;
+}
+.button:hover{
+    cursor: pointer;
+}
+@keyframes animate {
+    0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+
+@media screen {
+    @media (max-width:650px){
+        .display-topleft{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .jumbo{
+            text-align: center;
+            font-size: 50px;
+        }
+        .button{
+            margin-left: auto;
+        }
+    }
+    @media (min-width:650px){
+        .jumbo{
+            text-align: center;
+        }
+    }
+}
