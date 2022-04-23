@@ -80,22 +80,7 @@ h2{
 }
 
 
-@media screen {
-    @media(max-width:767.98px){
-        .w3-display-middle{
-            margin-left: 8px;
-            margin-top: 350px;
-            width: 90%;
-        }
-        .description{
-            width: 100%;
-            background-color: #31136699;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        
-    }
-}
+
 
 /* From uiverse.io by @barisdogansutcu */
 button {
@@ -163,3 +148,29 @@ button:hover:before {
 width: 100%;
 }
 
+
+@media screen {
+    @media(max-width:767.98px){
+        .w3-display-middle{
+            margin-left: 8px;
+            margin-top: 300px;
+            width: 90%;
+        }
+        .description{
+            width: 100%;
+            background-image: linear-gradient(62deg, #000000 20%, #1abe0eab 100%);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 0 rgba(206, 226, 234, 0.943);
+            font-style: italic;
+        }
+        body::before{
+            background-image: url("https://img.freepik.com/foto-gratis/primer-plano-hoja-marihuana-cannabis_1150-15082.jpg?t=st=1650667982~exp=1650668582~hmac=59c3ec917481cf423ff01da3b8e55622fe157098788f851434d284268135a77b&w=900");
+        }
+        button{
+            /* background-color: rgb(17, 106, 142); */
+            background-image: linear-gradient(62deg, #000000df 20%, #0ce121d8 100%);
+            font-style: italic;
+        }
+    }
+}
