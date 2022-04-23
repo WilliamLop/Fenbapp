@@ -14,7 +14,7 @@ body::before{
     width: 100%;
     z-index:-1;
     background-image:
-    url(/WFCL/img/cannabis-marijuana-leaf-closeup.jpg); 
+    url("https://img.freepik.com/foto-gratis/primer-plano-hoja-marihuana-cannabis_1150-15082.jpg?t=st=1650667982~exp=1650668582~hmac=59c3ec917481cf423ff01da3b8e55622fe157098788f851434d284268135a77b&w=900"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,7 +96,7 @@ button {
     cursor: pointer;
     background-color: transparent;
     transform: translateY(8px);
-    background-color: #220D4B;
+    background-color: #06761f;
 }
 
 button:after {
