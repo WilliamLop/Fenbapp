@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <header>
+        <nav class="navb">
+
+            <button class="w3-button w3-xxlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-sidebar sidebarstyle w3-bar-block" id="mySidebar">
+                <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            </div>
+            <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+            <div class="w3-bar">
+                <a href="#" id="astyle" class="w3-bar-item  w3-button">Home</a>
+                <a href="#" id="astyle" class="w3-bar-item  w3-button">Link 1</a>
+                <a href="#" id="astyle" class="w3-bar-item  w3-button">Link 2</a>
+                <a href="#" id="astyle" class="w3-bar-item  w3-button">Link 3</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Overlay -->
+
+
+    <!-- Page content -->
+
+    <div class="w3-container">
+
+        <div id="home" class="container">
+            <img class="slides"
+                src="https://img.freepik.com/foto-gratis/galletas-cannabis-hojas-cannabis-tabla-cortar-madera_1150-27999.jpg?t=st=1650677202~exp=1650677802~hmac=a159de7230ec5af3fd19ac777f79ee93dbbbba9cf35d761d9c80c8d8ecf980b7&w=900">
+            <img class="slides"
+                src="https://img.freepik.com/foto-gratis/aceite-canamo-semillas-hojas-canamo-marihuana-medicinal_1150-26679.jpg?w=900">
+            <img class="slides"
+                src="https://img.freepik.com/foto-gratis/medico-sosteniendo-hoja-cannabis-botella-aceite-cannabis-pared-blanca_1150-26701.jpg?w=900">
+        </div>
+
+        <div class="about">
+            <!-- About -->
+            <div id="about" class="w3-container w3-padding-32 acerca-style">
+                <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+    
+            
+        </div>
+        <section class="section-acerca">
+            <h2>Lo que necesitas saber</h2>
+
+            <div class="w3-row">
+                <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+                    <div class="w3-third tablink w3-bottombar w3-border-green w3-hover-light-grey w3-padding">Cannabis
+                        Medicinal</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Función</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Consumo</div>
+                </a>
+            </div>
+
+            <div id="London" class="w3-container city">
+                <h2>¿Qué es el cannabis medicinal?</h2>
+                <p>Lorem ipsum dolor sit amet at sanctus illum eirmod justo dolore illum ipsum consequat dolores tempor
+                    dolore justo veniam justo placerat nibh sanctus.
+                    Lorem dignissim sea et ut et quis in.Stet et clita sed tincidunt at stet sadipscing voluptua labore.
+                    
+                </p>
+            </div>
+
+            
+
+
+            <div id="Paris" class="w3-container city" style="display:none">
+                <h2>¿Para qué sirve?</h2>
+                <p>Lorem ipsum dolor sit amet at sanctus illum eirmod justo dolore illum ipsum consequat dolores tempor
+                    dolore justo veniam justo placerat nibh sanctus.
+                    Lorem dignissim sea et ut et quis in.Stet et clita sed tincidunt at stet sadipscing voluptua labore.
+                </p>
+            </div>
+
+            <div id="Tokyo" class="w3-container city" style="display:none">
+                <h2>¿Cómo podemos consumirlo?</h2>
+                <p>Lorem ipsum dolor sit amet at sanctus illum eirmod justo dolore illum ipsum consequat dolores tempor
+                    dolore justo veniam justo placerat nibh sanctus.
+                    Lorem dignissim sea et ut et quis in.Stet et clita sed tincidunt at stet sadipscing voluptua labore.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div id="about" class="w3-container w3-padding-32 acerca-style">
+                <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Link 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="w3-row-padding all-welcome w3-section w3-stretch">
+                <div class="w3-col products  s4">
+                    <img src="https://img.freepik.com/foto-gratis/trituradora-metal-aceite-cannabis-articulacion-posar_1150-20693.jpg?t=st=1650736185~exp=1650736785~hmac=21f2bef804473b235774ab3269ea9cbc114cf77297265d95e4b722e686d91fa2&w=900">
+                    <div class="elementosdesc">
+                        <h3>Nombre</h3>
+                        <p>Descripcion 1</p>
+                        <p>Descripcion 2</p>
+                        <button class="button"> Shop now
+                        </button>
+                    </div>
+                </div>
+                <div class="w3-col products s4">
+                    <img src="https://img.freepik.com/foto-gratis/aceite-canamo-que-combina-canamo-piso-madera-marron_1150-18450.jpg?w=900">
+                    <div class="elementosdesc">
+                        <h3>Nombre</h3>
+                        <p>Descripcion 1</p>
+                        <p>Descripcion 2</p>
+                        <button class="button"> Shop now
+                        </button>
+                    </div>
+                </div>
+                <div class="w3-col products s4">
+                    <img src="https://img.freepik.com/foto-gratis/marihuana-medicinal-cerca-brotes-articulaciones-cannabis_1150-20686.jpg?w=900">
+                    <div class="elementosdesc">
+                        <h3>Nombre</h3>
+                        <p>Descripcion 1</p>
+                        <p>Descripcion 2</p>
+                        <button class="button"> Shop now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-table">
+            <h2>Proyects bisnesd</h2>
+            <p>Lorem ipsum dolor sit amet at sanctus illum eirmod justo dolore illum ipsum consequat dolores tempor dolore justo veniam.<p>
+
+            <table class="w3-table-all ">
+                <thead>
+                    <tr class="w3-black w3-hover-red">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tr class="w3-hover-green">
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr class="w3-hover-blue">
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr class="w3-hover-black">
+                    <td>Adam</td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                </tr>
+                <tr class="w3-hover-yellow">
+                    <td>Bo</td>
+                    <td>Nilson</td>
+                    <td>35</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w3-row-padding acerca-stylehij">
+    
+            <div class="w3-col l3 m6  w3-margin-bottom "  >
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-asociacion_114360-5954.jpg?w=900" alt="John" style="width:100%">
+                <h3>Name</h3>
+                <p class="w3-opacity">Profetion</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-block">Contact</button></p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-archivos-texto_114360-4402.jpg?t=st=1650743572~exp=1650744172~hmac=b0d24039cb57d893931017bd9a96422b47313de7ef7508c31f97903f209cb810&w=900" alt="Jane" style="width:100%">
+                <h3>Name</h3>
+                <p class="w3-opacity">Profetion</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-block">Contact</button></p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-equipo-analisis-seo_114360-9215.jpg?w=900" alt="Mike" style="width:100%">
+                <h3>Name</h3>
+                <p class="w3-opacity">Profetion</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button w3-block">Contact</button></p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-dia-internet_114360-5349.jpg?t=st=1650743572~exp=1650744172~hmac=3c4797b43966eec1859137692c80404e302bec659164c5e06d1e831843d6bfad&w=900" alt="Dan" style="width:100%">
+                <h3>Name</h3>
+                <p class="w3-opacity">Profetion</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p><button class="w3-button  w3-block">Contact</button></p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey contenedor-contacto" id="contact" style="margin-bottom:64px">
+            <h2>Contactame</h2>
+            <div class="w3-section sectioncontacto">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chiquinquirá , COL</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +57 151515</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            </div><hr>
+
+            <!-- Image of location/map -->
+            <div class="imgcontact">
+                <div class="formulario">
+                    <h4>Envia un mensaje para contactarnos:</h4>
+                    <form action="/action_page.php" class="form" target="_blank">
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Nombre">
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required
+                                name="Email">
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Sujeto" required
+                                name="Subject">
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required
+                                name="Message">
+                        
+                            <button class="w3-button w3-light-grey w3-padding-large btn-enviarmensaje" type="submit">
+                                <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+                            </button>
+                    </form>
+                </div>
+                <img src="https://img.freepik.com/foto-gratis/vista-superior-burbujas-chat-receptor-telefono-espacio-copia_23-2148796078.jpg?t=st=1650758413~exp=1650759013~hmac=71aa67da2d28e92a1a2e65b3ddec0019e3b371b4c8214d6bac98829b13b422b3&w=900" class="w3-image imagencontacto">
+            </div>
+
+            <!-- End Contact Section -->
+           
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">Realizado por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">WFCL</a></p>
+            <!-- End footer -->
+        </footer>
+    </div>
+
+    <!-- JS to open and close sidebar with overlay effect -->
+    <script src="scriptIndex.js"></script>
+</body>
+
+</html>
